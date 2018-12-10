@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  *
+ * Used to show the movie list
  *
  * Created by ittai on 24/11/2018.
  */
@@ -41,9 +42,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MoviesView
         holder.movieTitle.setText(movies.get(position).getMovieName());
         holder.movieOverview.setText(movies.get(position).getMovieOverview());
         holder.movieImage.setImageResource(movies.get(position).getImageResource());
-
-
-
     }
 
     @Override
