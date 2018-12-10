@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/movie_item_row_height"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/movieImageView"
+        android:layout_width="@dimen/list_image_view_width"
+        android:layout_height="@dimen/movie_item_row_height"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        tools:src="@drawable/deadpool_2"/>
+
+    <TextView
+        android:id="@+id/movieTitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_toEndOf="@id/movieImageView"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/dark_grey"
+        android:layout_margin="4dp"
+         />
+    <TextView
+        android:layout_margin="4dp"
+        android:textSize="@dimen/overview_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieOverviewTV"
+        android:layout_below="@id/movieTitleTV"
+        android:layout_toEndOf="@id/movieImageView"
+        />
+
+</RelativeLayout>
